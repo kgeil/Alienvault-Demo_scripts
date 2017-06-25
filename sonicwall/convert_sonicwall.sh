@@ -6,7 +6,6 @@
 mkdir -p /var/log/demologs
 SCRIPTPATH=$( cd $(dirname $0) ; pwd -P )
 echo `date`
-echo "scriptpath= " "$SCRIPTPATH"
 
 while read line           
   do           
