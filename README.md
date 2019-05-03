@@ -19,7 +19,7 @@ perl install.pl
 ```
 ####Fast Install:
 ```
-apt-get -y install git;git clone https://github.com/kgeil/Alienvault-Demo_scripts;cd Alienvault-Demo_scripts ; perl install.pl; sonicwall/convert_sonicwall.sh 
+apt-get -y install git;git clone https://github.com/kgeil/Alienvault-Demo_scripts;cd Alienvault-Demo_scripts ; perl install.pl; sonicwall/convert_sonicwall.sh; ossecwin/brutewin.sh
 #the convert_sonicwall.sh script just changes the date on sonicwall events to today().  If I have the time, I hope to figure out why Santiago Basset's read_sonicwall.sh script isn't working with my data.  I think it needs to run through the clean_logs function in runlogs.pl, but I need to finish editing this paper and get it out the door first...
 ```
 
