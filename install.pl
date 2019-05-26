@@ -66,6 +66,9 @@ foreach my $plugin (@plugins) {
 	push @plugin_names, $base;
 	print " - Done\n\n";
 }
+print "+ Adding sonicwall events...\n";
+`sonicwall/convert_sonicwall.sh`;
+print " - Done\n\n";
 
 print "+ Bringing Up Dummy Network...\n";
 `modprobe dummy`;
@@ -117,6 +120,7 @@ print "+ Adding dummy interface... $to_insert ....\n";
 
 print "+ Adding Modified ossec.conf....";
 `cp ./ossecwin/ossec.conf /var/ossec/etc/`;
+`ossecwin/brutewin2.sh`;
 print " - Done\n";
 
 print "+ Adding prads local...";
