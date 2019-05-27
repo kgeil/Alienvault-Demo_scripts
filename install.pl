@@ -66,9 +66,6 @@ foreach my $plugin (@plugins) {
 	push @plugin_names, $base;
 	print " - Done\n\n";
 }
-print "+ Adding sonicwall events...\n";
-`sonicwall/convert_sonicwall.sh`;
-print " - Done\n\n";
 
 print "+ Bringing Up Dummy Network...\n";
 `modprobe dummy`;
@@ -139,6 +136,10 @@ print YELLOW, "+ Adding assets...", RESET;
 `sleep 2`;
 `cat ./assets/asset-playback >> /var/log/demologs/prads.log`;
 print CYAN, " - Done!\n\n", RESET;
+
+print "+ Adding sonicwall events...\n";
+`sonicwall/convert_sonicwall.sh`;
+print " - Done\n\n";
 
 
 print MAGENTA, "+ Checking for vulnscan...\n", RESET;
