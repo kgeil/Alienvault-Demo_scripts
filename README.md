@@ -34,6 +34,8 @@ alienvault-reconfig -c -d -v --rebuild_db;sleep 15;perl install.pl
 
 The installer will install the generators, add them to startup, and run them.  In case you want to start/stop them yourself..
 
+
+
 ```
 /etc/init.d/runpcaps [start|stop|restart]
 /etc/init.d/runlogs [start|stop|restart]
@@ -77,4 +79,7 @@ They will be separated by plugin.  A logrotate script for them is installed auto
 
 
 Forked from Santiago Bassett ([@santiagobassett](https://twitter.com/santiagobassett))
+
+For the Demo at the NYS Cyber Security Conference on 6/5/2019, there is a CTF, located here:
+http://ctf.placidsecurity.com:8000/
 
